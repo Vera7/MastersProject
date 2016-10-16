@@ -1,0 +1,2 @@
+json.extract! csv, :id, :school_year, :level_code, :div_num, :div_name, :sch_num, :sch_name, :federal_race_code, :gender, :disability_flag, :lep_flag, :disadvantaged_flag, :cohort_cnt, :diploma_rate, :dropout_rate, :created_at, :updated_at
+json.url csv_url(csv, format: :json)

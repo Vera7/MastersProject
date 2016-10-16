@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>School year:</strong>
+  <%= @csv.school_year %>
+</p>
+
+<p>
+  <strong>Level code:</strong>
+  <%= @csv.level_code %>
+</p>
+
+<p>
+  <strong>Div num:</strong>
+  <%= @csv.div_num %>
+</p>
+
+<p>
+  <strong>Div name:</strong>
+  <%= @csv.div_name %>
+</p>
+
+<p>
+  <strong>Sch num:</strong>
+  <%= @csv.sch_num %>
+</p>
+
+<p>
+  <strong>Sch name:</strong>
+  <%= @csv.sch_name %>
+</p>
+
+<p>
+  <strong>Federal race code:</strong>
+  <%= @csv.federal_race_code %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @csv.gender %>
+</p>
+
+<p>
+  <strong>Disability flag:</strong>
+  <%= @csv.disability_flag %>
+</p>
+
+<p>
+  <strong>Lep flag:</strong>
+  <%= @csv.lep_flag %>
+</p>
+
+<p>
+  <strong>Disadvantaged flag:</strong>
+  <%= @csv.disadvantaged_flag %>
+</p>
+
+<p>
+  <strong>Cohort cnt:</strong>
+  <%= @csv.cohort_cnt %>
+</p>
+
+<p>
+  <strong>Diploma rate:</strong>
+  <%= @csv.diploma_rate %>
+</p>
+
+<p>
+  <strong>Dropout rate:</strong>
+  <%= @csv.dropout_rate %>
+</p>
+
+<%= link_to 'Edit', edit_csv_path(@csv) %> |
+<%= link_to 'Back', csvs_path %>

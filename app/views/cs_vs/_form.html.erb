@@ -1,0 +1,87 @@
+<%= form_for(csv) do |f| %>
+  <% if csv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(csv.errors.count, "error") %> prohibited this csv from being saved:</h2>
+
+      <ul>
+      <% csv.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :school_year %>
+    <%= f.number_field :school_year %>
+  </div>
+
+  <div class="field">
+    <%= f.label :level_code %>
+    <%= f.text_field :level_code %>
+  </div>
+
+  <div class="field">
+    <%= f.label :div_num %>
+    <%= f.text_field :div_num %>
+  </div>
+
+  <div class="field">
+    <%= f.label :div_name %>
+    <%= f.text_field :div_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sch_num %>
+    <%= f.number_field :sch_num %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sch_name %>
+    <%= f.text_field :sch_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :federal_race_code %>
+    <%= f.text_field :federal_race_code %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :disability_flag %>
+    <%= f.text_field :disability_flag %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lep_flag %>
+    <%= f.text_field :lep_flag %>
+  </div>
+
+  <div class="field">
+    <%= f.label :disadvantaged_flag %>
+    <%= f.text_field :disadvantaged_flag %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cohort_cnt %>
+    <%= f.number_field :cohort_cnt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :diploma_rate %>
+    <%= f.number_field :diploma_rate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dropout_rate %>
+    <%= f.number_field :dropout_rate %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

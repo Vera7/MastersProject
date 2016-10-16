@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school_year: 1
+  level_code: MyString
+  div_num: 
+  div_name: MyString
+  sch_num: 1
+  sch_name: MyString
+  federal_race_code: MyString
+  gender: MyString
+  disability_flag: MyString
+  lep_flag: MyString
+  disadvantaged_flag: MyString
+  cohort_cnt: 1
+  diploma_rate: 1
+  dropout_rate: 1
+
+two:
+  school_year: 1
+  level_code: MyString
+  div_num: 
+  div_name: MyString
+  sch_num: 1
+  sch_name: MyString
+  federal_race_code: MyString
+  gender: MyString
+  disability_flag: MyString
+  lep_flag: MyString
+  disadvantaged_flag: MyString
+  cohort_cnt: 1
+  diploma_rate: 1
+  dropout_rate: 1

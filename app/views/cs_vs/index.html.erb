@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Csvs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>School year</th>
+      <th>Level code</th>
+      <th>Div num</th>
+      <th>Div name</th>
+      <th>Sch num</th>
+      <th>Sch name</th>
+      <th>Federal race code</th>
+      <th>Gender</th>
+      <th>Disability flag</th>
+      <th>Lep flag</th>
+      <th>Disadvantaged flag</th>
+      <th>Cohort cnt</th>
+      <th>Diploma rate</th>
+      <th>Dropout rate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @csvs.each do |csv| %>
+      <tr>
+        <td><%= csv.school_year %></td>
+        <td><%= csv.level_code %></td>
+        <td><%= csv.div_num %></td>
+        <td><%= csv.div_name %></td>
+        <td><%= csv.sch_num %></td>
+        <td><%= csv.sch_name %></td>
+        <td><%= csv.federal_race_code %></td>
+        <td><%= csv.gender %></td>
+        <td><%= csv.disability_flag %></td>
+        <td><%= csv.lep_flag %></td>
+        <td><%= csv.disadvantaged_flag %></td>
+        <td><%= csv.cohort_cnt %></td>
+        <td><%= csv.diploma_rate %></td>
+        <td><%= csv.dropout_rate %></td>
+        <td><%= link_to 'Show', csv %></td>
+        <td><%= link_to 'Edit', edit_csv_path(csv) %></td>
+        <td><%= link_to 'Destroy', csv, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Csv', new_csv_path %>
