@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 ruby '2.2.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -52,3 +52,6 @@ gem 'carrierwave'
 
 #added this gem to help resolve invalide byte sequence in UTF-8 error when uploading csv file
 gem 'utf8-cleaner'
+
+#database backup and dump 
+gem 'yaml_db'
