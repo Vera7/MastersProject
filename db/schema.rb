@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161016175145) do
+ActiveRecord::Schema.define(version: 20161018152204) do
 
   create_table "csvs", force: :cascade do |t|
     t.integer  "school_year"
@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(version: 20161016175145) do
     t.integer  "dropout_rate"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "quantity"
+    t.decimal  "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "test1s", force: :cascade do |t|

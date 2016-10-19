@@ -7,6 +7,11 @@ class Test1sController < ApplicationController
     @test1s = Test1.all
   end
 
+  def import
+    Test1.import(params[:file])
+    redirect_to root_url, notice: "Test1 imported."
+  end
+
   # GET /test1s/1
   # GET /test1s/1.json
   def show

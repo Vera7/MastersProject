@@ -1,3 +1,4 @@
+#require File.expand_path('../boot', __FILE__) #added for Proudcts upload fix
 require_relative 'boot'
 
 require 'rails/all'
