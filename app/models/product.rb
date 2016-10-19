@@ -1,9 +1,8 @@
 class Product < ApplicationRecord
 require 'CSV'
 
-
   def self.import(file)
-    CSV.foreach(file.path, encoding: "bom|utf-8", headers: :true) do |row| #replaced headers: true, encoding:'iso-8859-1:utf-8'
+    CSV.foreach(file.path, encoding: "bom|utf-8", headers: :first_row) do |row| #replaced headers: true, encoding:'iso-8859-1:utf-8'
 
      Product.create!(row.to_hash)
 
